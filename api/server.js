@@ -3,8 +3,8 @@ const app = express();
 
 //MongoDB
 // const URL = 'mongodb://localhost:27017/Oishii';
-const URL = "mongodb+srv://oishii:oishii@cluster0.9hn8c.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-
+// const URL = "mongodb+srv://oishii:oishii@cluster0.9hn8c.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const URL = 'mongodb://localhost:27017/docker-node-mongo';
 const mongoose = require('mongoose');
 mongoose.connect(URL);
 
@@ -44,4 +44,4 @@ require("./db/AllRecipes/allRecipe-service")(app);
 require("./db/Menu/menu-service")(app);
 
 
-app.listen(process.env.PORT || 4000);
+app.listen(4000);

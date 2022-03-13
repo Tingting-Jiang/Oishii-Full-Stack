@@ -11,7 +11,7 @@ import Search from './SearchScreen';
 import SearchDetail from "./RecipeScreen";
 
 import Login from './LoginAndRegister/LoginScreen';
-import Register from './LoginAndRegister/RegisterScreen/';
+import Register from './LoginAndRegister/RegisterScreen';
 import Create from './CreateScreen';
 import EditProfile from "./ProfileScreen/EditProfile";
 import VisitProfile from "./ProfileScreen/VisitProfile";
@@ -20,7 +20,7 @@ import Menu from './Explore/Menu';
 import Explore from './Explore';
 import AllUsers from './SearchScreen/AllUsers';
 
-import TermsAndConditions from "./TermsAndConditions/";
+import TermsAndConditions from "./TermsAndConditions";
 import TermsOfService from "./TermsAndConditions/TermsOfService";
 import PrivacyPolicy from "./TermsAndConditions/PrivacyPolicy";
 import CookiePolicy from "./TermsAndConditions/CookiePolicy";
