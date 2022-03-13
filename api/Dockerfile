@@ -6,8 +6,8 @@ RUN apt-get update && apt-get install -y nodejs
 
 #Install some dependencies
 
-WORKDIR /usr/app_server
-COPY ./ /usr/app_server
+WORKDIR /usr/src/app
+COPY ./ /usr/src/app
 RUN npm install
 EXPOSE 4000
 # Set up a default ciommand
