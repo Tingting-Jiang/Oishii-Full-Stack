@@ -29,12 +29,12 @@ const RecipeCards = ({profile}) => {
     // TODO get latest from db
     const [latestList, setLatest]  = useState([]);
     
-    useEffect(() =>
-        userService.getAllLatestRecipes()
-            .then(data =>{
-                setLatest(data);
-            })
-    ,[])
+    // useEffect(() =>
+    //     userService.getAllLatestRecipes()
+    //         .then(data =>{
+    //             setLatest(data);
+    //         })
+    // ,[])
 
     //get trending recipes
     useEffect(() =>
