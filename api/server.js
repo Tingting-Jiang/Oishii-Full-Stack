@@ -34,8 +34,8 @@ app.use(session({
     saveUninitialized: true
 }));
 
-console.log("in server");
 
+console.log("in server");
 // require('./service/test')(app);
 require('./service/spoon')(app);
 require("./db/User/user-controller")(app);

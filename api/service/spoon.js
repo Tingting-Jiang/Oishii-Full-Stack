@@ -11,8 +11,9 @@ const HOST = 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com';
 module.exports = (app) =>  {
     
     const fetchSearchResult = (req, res) => {
+        console.log("Auto complete =>", req.params.key);
         const str = `/recipes/autocomplete?query=${req.params.key}&number=10`;
-        // console.log("Auto complet =>", req.params.key);
+        
         fetch(URL + str, {
             "method": "GET",
             "headers": {

@@ -294,9 +294,11 @@ export const getAllLatestRecipes = () =>
         credentials: 'include',
     })
         .then(res => {
-            console.log("");
             return res.json()
-        });
+        })
+        .catch(res => {
+            console.log("error in getAllLatestRecipes" + res)
+    });
 
 
 
@@ -314,6 +316,9 @@ export const getMenuDetails = (menuId) =>
             if (res.ok)
                 return res.json();
             else throw res;
+        })
+        .catch(res => {
+            console.log("error in getMenuDetails" + res)
         });
 
 
@@ -332,7 +337,10 @@ export const addToMenu = (menuId, recipeId) =>
             if (res.ok)
                 return res.json();
             else throw res;
-        });
+        })
+        .catch(res => {
+        console.log("error in getMenuDetails" + res)
+    });
 
 
 
